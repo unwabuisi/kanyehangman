@@ -1,6 +1,6 @@
 
 // array of words
-var words = ["slow jamz", "fade", "power", "paranoid", "stronger", "blood on the leaves", "bound 2", "golddigger", "heartless", "lollipop"];
+var words = ["slow jamz", "fade", "power", "paranoid", "stronger", "blood on the leaves", "bound 2", "golddigger", "heartless", "lollipop", "addiction", "big brother", "good life", "homecoming", "new slaves"];
 // word chosen from array
 var word = "";
 // represents individual letters in word
@@ -23,6 +23,11 @@ var bound2Audio = new Audio('assets/audio/bound2.mp3');
 var golddiggerAudio = new Audio('assets/audio/golddigger.mp3');
 var heartlessAudio = new Audio('assets/audio/heartless.mp3');
 var lollipopAudio = new Audio('assets/audio/lollipop.mp3');
+var addictionAudio = new Audio('assets/audio/addiction.mp3');
+var bigBrotherAudio = new Audio('assets/audio/bigBrother.mp3');
+var goodLifeAudio = new Audio('assets/audio/goodLife.mp3');
+var homecomingAudio = new Audio('assets/audio/homecoming.mp3');
+var newSlavesAudio = new Audio('assets/audio/newSlaves.mp3');
 
 // setting variables for wins, losses
 var wins = 0;
@@ -44,6 +49,11 @@ function startGame() {
 	golddiggerAudio.pause();
 	heartlessAudio.pause();
 	lollipopAudio.pause();
+	addictionAudio.pause();
+	bigBrotherAudio.pause();
+	goodLifeAudio.pause();
+	homecomingAudio.pause();
+	newSlavesAudio.pause();
 
 	// resets chance counter
 	chances = 14;
@@ -92,6 +102,22 @@ function startGame() {
 		else if (word === "lollipop") {
 			lollipopAudio.play();
 		}
+		else if (word === "addiction") {
+			addictionAudio.play();	
+		}
+		else if (word === "big brother") {
+			bigBrotherAudio.play();	
+		}
+		else if (word === "good life") {
+			goodLifeAudio.play();
+		}
+		else if (word === "homecoming") {
+			homecomingAudio.play();	
+		}
+		else if (word === "new slaves") {
+			newSlavesAudio.play();	
+		}
+		
 
 	};
 
