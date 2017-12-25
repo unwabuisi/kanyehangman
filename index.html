@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Kanye Hangman</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet">
+
+	<!-- css stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<div class="container">
+	<!-- video background -->
+	<div class="fullscreen-bg">
+		<video autoplay="autoplay" loop="loop" class="fullscreen-bg_video">
+			<source src="assets/images/Kanye.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	 <div class="headline">
+	 	<h1>Hangman: Kanye Version</h1>
+	 	<h4>Guess which Kanye West song is playing.<br>
+	 	 Press any key to start!</h4>
+	 </div>
+
+	<!-- wins/losses -->
+	<div class="row">
+		<div class="col-sm-3 col-xs-3 box1">
+				<p>Wins: <span style="color: green" id="wins">0</span></p>
+				<p>Losses: <span style="color: red" id="losses">0</span></p>
+		</div>
+
+	<!-- letters/chances -->
+		<div class="col-sm-3 col-xs-3 box2">
+				<p>Chances Left: <span id="chances"></span></p>
+				<p>Letters Guessed: <span id="lettersGuessed"></span></p>
+		</div>
+	</div>
+
+	<!-- blank spaces -->
+	<div class="row">
+		<div class="col-sm-9 text-center bottom">			
+				<h3 id="spaces"></h3>
+		</div>
+	</div>
+</div>
+
+<!-- game script -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
