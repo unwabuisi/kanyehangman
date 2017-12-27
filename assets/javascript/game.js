@@ -34,7 +34,7 @@ var wins = 0;
 var losses = 0;
 
 // chances left
-var chances = 14;
+var chances = 5;
 
 
 function startGame() {
@@ -56,7 +56,7 @@ function startGame() {
 	newSlavesAudio.pause();
 
 	// resets chance counter
-	chances = 14;
+	chances = 5;
 	// resets letters guessed 
 	lettersGuessed = [];
 	// resets letters/spaces remaining
